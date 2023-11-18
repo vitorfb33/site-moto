@@ -364,6 +364,12 @@ footer {
     
 }
 
+#conteudo h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+
 
 
 
@@ -385,7 +391,15 @@ footer {
 
 
 /*SMARTPHONE LANDSCAPE*/
-@media (min-width: 576px) {}
+@media (min-width: 576px) {
+
+
+    #conteudo h2 {
+        text-align: center;
+        margin-bottom: 20px;
+        margin-top: 20px;
+      }
+}
 
 
 
@@ -441,6 +455,12 @@ footer {
         margin-bottom: 20px;
     }
 
+    #conteudo h2 {
+        text-align: center;
+        margin-bottom: 20px;
+        margin-top: 20px;
+      }
+
 
 }
 
@@ -451,7 +471,14 @@ footer {
 
 
 /*TABLET LANDSCAPE*/
-@media (min-width: 992px) {}
+@media (min-width: 992px) {
+
+    #conteudo h2 {
+        text-align: center;
+        margin-bottom: 20px;
+        margin-top: 20px;
+      }
+}
 
 
 
