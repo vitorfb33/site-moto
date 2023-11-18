@@ -125,6 +125,7 @@ body {
 
 .card h3{
     margin-top: 15px;
+    color: #ffffff;
 }
 .card p{
     text-align: left;
@@ -622,13 +623,7 @@ footer {
     }
 
 
-    .social{
-        margin-left: 160px;
-    }
-    .copyright{
-        margin-left: 160px;
-    }
-
+    
     /*-------------------------------*/
 
     .motos-fundo{
