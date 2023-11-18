@@ -1,0 +1,605 @@
+@charset "UTF-8";
+
+
+/*Fontes:
+    Titulo:quicksand
+    texte: josefin Sans
+    
+    cores:
+    
+    #173261
+    #a9a9a9
+    #343538
+    #fff
+    
+    */
+/*quicksand*/
+/* quando puxar uma fonte precisa sempre estar no topo */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+
+/*josefin Sans*/
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+
+
+/*root criar variavel  / para trocar a cor  /--cor1:*/
+:root {
+    --cor1: #ffffff;
+    --cor2: #030303;
+    --cor3: #5f5e5e;
+    --cor4: #fa0f06;
+
+
+    /*puxar a fonte*/
+    --font-titulo: 'Quicksand', sans-serif;
+    --font-texto: 'Josefin Sans', sans-serif;
+}
+
+
+* {
+    /* para fica perto das bordas do padrão do navegador /Css reset*/
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+
+body {
+    font-family: var(--font-texto);
+    font-size: 1.2em;
+}
+
+#topo {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+}
+
+.botao {
+    flex-wrap: wrap;
+    text-decoration: none;
+    /*tirar o sublinhado*/
+    color: var(--cor2);
+    font-size: 1.2em;
+    font-weight: 700; /*deixar em negrito*/
+    background: var(--cor4);
+    padding: 10px 40px;/*espaçamento interno ele a fasta da borda*/
+    border: 2px solid var(--cor2);
+    border-radius: 25px;/*arredondar a borda do Saiba+*/
+
+}
+
+.flex {
+    display: flex;
+    /* flex serve para tornar flexivel e resposivel*/
+    justify-content: space-between;
+
+}
+
+.flex2 {
+    display: flex;
+    align-items: center;
+}
+
+
+
+.flex4 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+
+
+.flex6 {
+    display: flex;
+    justify-content: space-around;
+    /*alinhamento e da um afastada em relação ao conteiner */
+
+}
+
+.cards{
+    margin-left: 15px;
+}
+
+
+
+.card{
+    margin-top: 25px;
+    width: 338px;
+    height: 520px;
+    background: var(--cor2);
+    border: 1px solid var(--cor3);
+    border-radius: 25px;
+    text-align: center;
+
+}
+
+.card img{
+    border-radius: 25px 25px 0px 0px;
+}
+
+.card h3{
+    margin-top: 15px;
+}
+.card p{
+    text-align: left;
+    padding: 10px 30px 50px 30px;
+    color: var(--cor1);
+
+}
+
+.card a{
+    padding: 10px 100px;
+    border: 0;
+}
+
+
+
+/*SMARTPHONE PORTRAIT*/
+header {
+    height: 60px;
+}
+
+
+#check {
+    display: none;
+}
+
+label {
+    font-size: 3em;
+    position: fixed;
+    top: 5px;
+    right: 15px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+nav ul {
+    list-style: none;
+    background: var(--cor3);
+    height: 100vh;
+    position: fixed;
+    top: 60px;
+    right: -100%;
+    width: 100%;
+    transition: all 0.5s;
+}
+
+#check:checked~ul {
+    /* ~ serve para fazer a junção do check, o nome é checked*/
+    right: 0;
+
+}
+
+nav ul li {
+    padding: 20px;
+    border-bottom: 1px solid var(--cor1);
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--cor2);
+}
+
+main {
+    height: 75vh;
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+    /* background-position coloca no centro */
+    color: var(--cor1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /*centralizar o conteudo*/
+    text-align: center;
+    /*centralizar texto*/
+}
+
+main h1 {
+    font-size: 1.5em;
+    margin-right: 0px;
+}
+
+main h2 {
+    font-size: 0.9em;
+    margin: 20px 20px 20px 20px;
+}
+
+
+
+/* SOBRE*/
+
+#sobre {
+    margin-top: 10px;
+}
+
+#sobre {
+    padding: 50px 0px;
+    background: #000000;
+    background-size: cover;
+    background-position: center;
+}
+
+.destaque_sobre {
+    display: none;
+}
+
+.texto_sobre {
+    color: var(--cor1);
+    padding: 0px 10px;
+}
+
+.texto_sobre h2 {
+    margin-top: 10px;
+}
+
+.topico_sobre {
+    margin-top: 20px;
+
+}
+
+.topico_sobre img {
+    margin-right: 10px;
+}
+
+/*sobre 2*/
+
+.destaque_sobre2 {
+    display: none;
+}
+
+.texto_sobre2 {
+    color: var(--cor1);
+    padding: 0px 10px;
+}
+
+.texto_sobre2 p{
+    margin-top: 20px;
+}
+
+.texto_sobre2 h2{
+    margin-top: 20px;
+}
+
+
+
+.texto_sobre h2 {
+    margin-bottom: 10px;
+}
+
+/*sobre 3*/
+.destaque_sobre3 {
+    display: none;
+}
+
+.texto_sobre3 {
+    color: var(--cor1);
+    padding: 0px 10px;
+}
+
+.texto_sobre3 p{
+    margin-top: 20px;
+}
+
+.texto_sobre3 h2{
+    margin-top: 20px;
+}
+
+
+/*RODAPE*/
+address {
+    padding: 35px 10px 0px 10px;
+    background: url(img/harley-davidson-card3.jpg);
+    background-size: cover;
+    background-position: center;
+    color: var(--cor1);
+}
+
+.contato{
+    background: rgba(3, 3, 3, 0.384);
+    
+}
+
+.endereco {
+    background: rgba(3, 3, 3, 0.384);
+    
+}
+
+.dados{
+    background: rgba(3, 3, 3, 0.384);
+    
+}
+
+address a {
+    text-decoration: none;
+    color: var(--cor1);
+
+}
+
+address img {
+    padding-top: 15px;
+
+}
+
+.icone-local {
+    display: none;
+}
+
+.dados {
+    margin: 30px 0px 15px 0px;
+}
+
+.google-maps {
+    display: none;
+}
+
+footer {
+    padding: 5px;
+    background: var(--cor3);
+    color: var(--cor1);
+    text-align: center;
+}
+
+.social {
+    margin-bottom: 25px;
+}
+
+.social a {
+    text-decoration: none;
+}
+
+.endereco{
+    margin-left: 80px;
+}
+
+.saiba{
+    margin-top: 20px;
+    margin-bottom: 40px;
+
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*SMARTPHONE LANDSCAPE*/
+@media (min-width: 576px) {}
+
+
+
+
+
+
+
+
+
+
+
+/*TABLET PORTRAIT*/
+@media (min-width: 768px) {
+    .cards2 {
+        margin-left: 50px;
+        width: 300px;
+      }
+}
+
+
+
+
+
+
+/*TABLET LANDSCAPE*/
+@media (min-width: 992px) {}
+
+
+
+
+
+
+
+
+
+
+/*PC*/
+@media (min-width: 1200px) {
+
+    /*layout*/
+    .container {
+        max-width: 1140px;  
+        margin: 0 auto;     
+    }
+
+    header {
+        height: 125px;
+    }
+
+    label {
+        display: none;
+    }
+
+    nav ul {
+        position: static;
+        height: auto;
+        margin-top: 50px;
+        padding-right: 150px;
+
+    }
+
+    nav ul li {
+        float: left;
+        border: 0;
+    }
+
+    nav ul li a {
+        color: var(--cor2)
+    }
+
+    nav ul li a:hover {
+        color: var(--cor4);
+    }
+
+    main {
+        height: 100vh;
+        background:url(img/rota66-2.png);
+        background-size: cover;
+        background-position: center;
+        /* background-position coloca no centro */
+        color: var(--cor1);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /*centralizar o conteudo*/
+        text-align: center;
+        /*centralizar texto*/
+    }
+
+    main h1 {
+        font-size: 2.5em;
+        margin-left: 300px;
+    }
+
+    main h2 {
+        font-size: 1em;
+        margin: 20px 0px 50px 300px;
+    }
+
+    #conteudo h2 {
+        text-align: center;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+
+    .card {
+        /*margin-left: 210px;*/
+        margin-bottom: 20px;
+    }
+
+    /*SOBRE pc*/
+    .destaque_sobre {
+        display: inline;
+    }
+
+    .destaque_sobre img {
+        border-radius: 10%;
+        margin-right: 50px;
+    }
+
+    /*Sobre 2 pc*/
+
+    .destaque_sobre2 {
+        display: inline;
+    }
+
+    .destaque_sobre2 img {
+        border-radius: 10%;
+        margin-right: 50px;
+    }
+
+    /*Sobre 3 pc*/
+
+    .destaque_sobre3 {
+        display: inline;
+    }
+
+    .destaque_sobre3 img {
+        border-radius: 10%;
+        margin-right: 50px;
+    }
+
+    .texto_sobre3 h2 {
+        color: #ffffff;
+    }
+
+    .texto_sobre3 p {
+        color: #ffffff;
+    }
+
+    /*Rodape*/
+    .icone-local {
+        display: inline;
+    }
+
+    .icone-mapa {
+        display: none;
+    }
+
+    .google-maps {
+        display: inline;
+    }
+
+    .flex6 {
+        flex-direction: row-reverse;
+    }
+
+
+    .social{
+        margin-left: 160px;
+    }
+    .copyright{
+        margin-left: 160px;
+    }
+
+    /*-------------------------------*/
+
+    .motos-fundo{
+        
+        height: 600px;
+        
+    }
+
+    .cards2{
+        margin-top: 25px;
+        margin-left: 550px;
+        width: 450px;
+        height: 300px;
+        background: var(--cor2);
+        border-radius: 25px;
+        
+    }
+
+    .cards2 h2{
+        color: white;
+        text-align: center;
+    }
+
+    .cards2 p{
+        color: rgb(0, 0, 0);
+        margin-top: 20px;
+    }
+
+    .cards2 img{
+        margin-left: 56px;
+    }
+
+    .saiba{
+        margin-left: 700px;
+        margin-top: 20px;
+        
+    }
+
+
+
+
+
+    
+    
+
+}
