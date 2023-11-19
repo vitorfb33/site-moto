@@ -466,6 +466,15 @@ footer {
       }
 
 
+      .motos-fundo {
+        display: flex;
+        justify-content: center;
+        height: 600px;
+        margin-bottom: 90px;
+      }
+    
+
+
 }
 
 
@@ -633,9 +642,10 @@ footer {
     .motos-fundo{
         display: flex;
         justify-content: center;
-        height: 600px;
+        height: 700px;
         background-image: url(img/fundo-fogo2.jpeg);
         margin-top: 20px;
+        margin-bottom: 20px;
     }
 
     .cards2{
